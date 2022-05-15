@@ -24,3 +24,7 @@ if apples < 3:
     new_fruit = fruit[0]
 
 print(new_fruit)
+
+'''example of a good use of global constant '''
+PI = 3.14
+URL = 'http://funtoeat.com'

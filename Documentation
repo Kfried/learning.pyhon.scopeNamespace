@@ -45,4 +45,7 @@ print(new_fruit)
 
 +++++++++fails because scope changed
 
-The better way of modifying a global variable is shown in the code as a return statement
+The better way of modifying a global variable is shown in the code as a return statement, as exampled in the code
+
+
+Note that Globals are not always a bad thing, for example global constants that would never changed but are referenced elsewhere
