@@ -1,0 +1,48 @@
+In the apples, we see the difference in scope, local scope exists within functions this is demonstrated in the example
+
+another example of scope:
+
+
+def a_function():
+    this_thing = 2
+    print(this_thing)
+
+
+print(this_thing)
+
+
+That will raise an error
+
+we could put it to global variable as we did on the code example, however, note that the behaviour was a little unexpected.
+Although we set the value within the scope of the function, and that was seen. It was not retained beyond the function
+
++++Namespace++
+Namespace in the python world is the concept of calling something a thing , apples was assigned the value where a namespace
+is valid in certain scopes.
+
+IN the ErroredScope code, currently the code is correct, but you cant access a global variable without declaring it in
+the function block that it is as such
+
+Note that the value is accessible without modification
+
+there is no such thing as block scope so the following is at global :
+
++++++++++++++++
+apples = 5
+fruit = ['banana', 'cocunut']
+if apples < 6:
+    new_fruit = fruit[0]
+
+print(new_fruit)
+++++++Works+++++++++
+
+apples = 5
+def add_apple():
+  if apples < 6:
+    new_fruit = fruit[0]
+
+print(new_fruit)
+
++++++++++fails because scope changed
+
+The better way of modifying a global variable is shown in the code as a return statement
